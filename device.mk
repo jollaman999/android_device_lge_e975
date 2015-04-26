@@ -45,7 +45,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/thermald-geehrc.conf:system/etc/thermald.conf
 
 PRODUCT_COPY_FILES += \
-        $(LOCAL_PATH)/initlogo.rle:root/initlogo.rle888 \
+        $(LOCAL_PATH)/initlogo.rle:root/initlogo.rle \
 	$(LOCAL_PATH)/init.geehrc.rc:root/init.geehrc.rc \
 	$(LOCAL_PATH)/fstab.geehrc:root/fstab.geehrc \
 	$(LOCAL_PATH)/ueventd.geehrc.rc:root/ueventd.geehrc.rc
