@@ -91,9 +91,13 @@ PRODUCT_PACKAGES += \
 	keystore.msm8960
 
 PRODUCT_PROPERTY_OVERRIDES += \
-	telephony.lteOnCdmaDevice=0 \
-	ro.telephony.default_network=9 \
-	telephony.lteOnGsmDevice=1
+	telephony.lteOnCdmaDevice=1 \
+	telephony.lteOnGsmDevice=0 \
+	ro.telephony.default_network=10 \
+	ro.ril.def.preferred.network=10 \
+	ril.subscription.types=NV,RUIM \
+	ro.cdma.subscription=0 \
+	ro.telephony.default_cdma_sub=0
 
 PRODUCT_PACKAGES += \
 	wpa_supplicant_overlay.conf \
