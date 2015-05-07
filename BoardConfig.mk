@@ -71,7 +71,8 @@ TW_BRIGHTNESS_PATH := /sys/class/backlight/lm3530/brightness
 TW_MAX_BRIGHTNESS := 255
 
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-TARGET_RECOVERY_FSTAB = device/lge/e975/recovery/twrp.fstab
+#TARGET_RECOVERY_FSTAB = device/lge/e975/recovery/twrp.fstab
+TARGET_RECOVERY_FSTAB = device/lge/e975/fstab.geehrc
 
 PRODUCT_COPY_FILES += device/lge/e975/recovery/twrp.fstab:recovery/root/etc/twrp.fstab
 
