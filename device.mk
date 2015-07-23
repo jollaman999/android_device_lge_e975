@@ -50,6 +50,11 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/fstab.geehrc:root/fstab.geehrc \
 	$(LOCAL_PATH)/ueventd.geehrc.rc:root/ueventd.geehrc.rc
 
+# jolla-kernel
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/jolla-kernel.prop:root/jolla-kernel.prop \
+	$(LOCAL_PATH)/jolla-kernel_Updater.apk:system/app/jolla-kernel_Updater/jolla-kernel_Updater.apk
+
 # Prebuilt kl and kcm keymaps
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/apq8064-tabla-snd-card_Button_Jack.kl:system/usr/keylayout/apq8064-tabla-snd-card_Button_Jack.kl \
