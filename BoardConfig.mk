@@ -81,6 +81,7 @@ MR_INPUT_TYPE := type_b
 MR_INIT_DEVICES := device/lge/e975/mr_init_devices.c
 MR_RD_ADDR := 0x82500000
 MR_DPI := hdpi
+MR_DPI_FONT := 240
 MR_FSTAB := device/lge/e975/recovery/twrp.fstab
 MR_KEXEC_MEM_MIN := 0x85000000
 MR_INFOS := device/lge/e975/mrom_infos
