@@ -89,8 +89,4 @@
     </string-array>
 
     <integer name="config_deviceHardwareKeys">7</integer>
-
-    <!-- Is the notification LED brightness adjustable ?
-         Used to decide if the user can set LED brightness -->
-    <bool name="config_adjustableNotificationLedBrightness">false</bool>
 </resources>
