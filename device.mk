@@ -53,7 +53,8 @@ PRODUCT_COPY_FILES += \
 # jolla-kernel
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/jolla-kernel.prop:root/jolla-kernel.prop \
-	$(LOCAL_PATH)/jolla-kernel_Updater.apk:system/app/jolla-kernel_Updater/jolla-kernel_Updater.apk
+	$(LOCAL_PATH)/jolla-kernel_Updater.apk:system/app/jolla-kernel_Updater/jolla-kernel_Updater.apk \
+	$(LOCAL_PATH)/jolla-kernel_Updater.apk:system/app/A2DPChecker/A2DPChecker.apk
 
 # Prebuilt kl and kcm keymaps
 PRODUCT_COPY_FILES += \
