@@ -44,17 +44,15 @@ on post-fs-data
     chmod 0664 /sys/devices/virtual/input/lge_touch/keypad_enable
     restorecon /sys/devices/virtual/input/lge_touch/keypad_enable
 
-service config_bluetooth /system/bin/sh /system/etc/init.geehrc.bt.sh "onboot"
+service config_bluetooth /system/bin/init.geehrc.bt.sh "onboot"
     class core
     user root
-    seclabel u:r:bluetooth_loader:s0
     oneshot
 
-service hciattach /system/bin/sh /system/etc/init.geehrc.bt.sh
+service hciattach /system/bin/init.geehrc.bt.sh
     class late_start
     user bluetooth
     group qcom_oncrpc bluetooth net_bt_admin system
-    seclabel u:r:bluetooth_loader:s0
     disabled
     oneshot
 
@@ -98,7 +96,7 @@ service conn_init /system/bin/logwrapper /system/bin/conn_init
     group system wifi
     oneshot
 
-service fm_dl /system/bin/sh /system/etc/init.gee.fm.sh
+service fm_dl /system/bin/init.gee.fm.sh
     class late_start
     user root
     group system qcom_oncrpc

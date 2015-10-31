@@ -79,7 +79,7 @@ PRODUCT_PACKAGES += \
 #	power.msm8960
 
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/init.geehrc.bt.sh:system/etc/init.geehrc.bt.sh
+	$(LOCAL_PATH)/init.geehrc.bt.sh:system/bin/init.geehrc.bt.sh
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.qualcomm.bt.hci_transport=smd
@@ -111,12 +111,16 @@ PRODUCT_PACKAGES += \
 
 ## FM 
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/init.gee.fm.sh:system/etc/init.gee.fm.sh \
+	$(LOCAL_PATH)/init.gee.fm.sh:system/bin/init.gee.fm.sh \
 	$(LOCAL_PATH)/audio_policy.conf:system/vendor/etc/audio_policy.conf
 
 #PRODUCT_PACKAGES += \
 #	FM2 \
 #	qcom.fmradio \
 #	libqcomfm_jni
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.dex2oat-filter=speed \
+    dalvik.vm.dex2oat-swap=false
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
